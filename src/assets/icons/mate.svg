@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 48 48" fill="none">
+  <circle cx="24" cy="24" r="22" fill="#0081FB" fill-opacity="0.12" stroke="#0081FB" stroke-width="2"/>
+  <!-- Infinity loop for Meta / Mate -->
+  <path d="M16 29C13 29 11 26.5 11 24C11 20 14 18 17.5 18C21 18 23.5 21.5 24 24C24.5 21.5 27 18 30.5 18C34 18 37 20 37 24C37 26.5 35 29 32 29C28.5 29 25.5 25 24 24C22.5 25 19.5 29 16 29Z" stroke="#0081FB" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="24" cy="24" r="2" fill="#00E5FF"/>
+</svg>

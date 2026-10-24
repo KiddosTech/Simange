@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'JetBrains Mono', monospace;
+  background-color: #080a0f;
+  color: #d1d5db;
+  overflow: hidden;
+  user-select: none;
+}
+
+/* Tabular figures for fluctuating price numbers */
+.num-mono {
+  font-family: 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums lining-nums;
+}
+
+/* Custom Cyberpunk Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0d111a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f293d;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #2a3752;
+}
+
+/* Bloomberg / Cyberpunk Scanline Effect */
+.crt-overlay::before {
+  content: " ";
+  display: block;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
+  background: linear-gradient(rgba(18, 16, 16, 0) 50%, rgba(0, 0, 0, 0.25) 50%), linear-gradient(90deg, rgba(255, 0, 0, 0.03), rgba(0, 255, 0, 0.01), rgba(0, 0, 255, 0.03));
+  z-index: 999;
+  background-size: 100% 2px, 3px 100%;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+/* Glow effects */
+.glow-text-green {
+  text-shadow: 0 0 8px rgba(0, 247, 150, 0.5);
+}
+
+.glow-text-red {
+  text-shadow: 0 0 8px rgba(255, 51, 102, 0.5);
+}
+
+.glow-text-cyan {
+  text-shadow: 0 0 8px rgba(0, 229, 255, 0.5);
+}
+
+.glow-text-amber {
+  text-shadow: 0 0 8px rgba(255, 183, 3, 0.5);
+}
+
+/* Glass panel */
+.cyber-panel {
+  background: #0d111a;
+  border: 1px solid #1f293d;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.4);
+}
